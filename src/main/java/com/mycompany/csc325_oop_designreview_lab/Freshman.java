@@ -12,6 +12,7 @@ public class Freshman extends Student{
     private int credits;
     public Freshman(String name, short age, int credits) {
         super(name, age);
+        this.credits = credits;
     }
     public int getCredits(){
         return credits;
