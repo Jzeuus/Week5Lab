@@ -23,9 +23,9 @@ public class MainClass {
 		
                 // ToDo 10: Add a toString method for Senior class
                 
-		Freshman std1= new Student("James", 20, 12); // name, age, credits
+		Student std1= new Student("James", 20, 12); // name, age, credits
                 
-                Senior std2 = new Student("John", 30, 90);
+                Student std2 = new Student("John", 30, 90);
 		
 		// ToDo 11: Set the gpa of the student using the scanner and user
 		// 			input and then print the output.
