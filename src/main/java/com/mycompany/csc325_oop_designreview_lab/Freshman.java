@@ -22,4 +22,13 @@ public class Freshman extends Student{
         credits = newCredits;
     }
     
+    public String toString(){
+        return "Name: " + getName() +
+                "\nAge: " + getAge() + 
+                "\nAddress: " + getAddress() +
+                "\nGPA: " + getGPA() +
+                "\nCredits: "+ getCredits() +
+                "\nStudent Year: " + getClass().getSimpleName();
+    }
+    
 }
