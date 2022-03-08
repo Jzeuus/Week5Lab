@@ -4,6 +4,9 @@
  */
 package com.mycompany.csc325_oop_designreview_lab;
 
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 /**
  *
  * @author MoaathAlrajab, Jesus Alvarado
@@ -25,7 +28,12 @@ public class MainClass {
                 
 		Student std1= new Freshman("James", (short) 20, 12); // name, age, credits
                 
-                Student std2 = new Senior("John", (short) 30, 90);
+                Student std2 = null;
+            try {
+                std2 = new Senior("John", (short) 30, 90);
+            } catch (Exception ex) {
+                System.out.println(ex);
+            }
 		
 		// ToDo 11: Set the gpa of the student using the scanner and user
 		// 			input and then print the output.
