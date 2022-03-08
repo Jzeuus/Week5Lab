@@ -10,8 +10,36 @@ package com.mycompany.csc325_oop_designreview_lab;
  */
 public class Senior extends Student{
     
-    public Senior(String name, short age, double grade) {
-        super(name, age, grade);
+    private int credits;
+    
+    public Senior(String name, short age, int totalCredits) throws Exception {
+        super(name, age);
+        
+        if(totalCredits<85){
+            throw new IllegalArgumentException("Need 85 credits minimum to be a Senior!");
+        }
+        else{
+            this.credits = totalCredits;
+        }
+        
+        
+    }
+    
+    public int getCredits(){
+        return credits;
+    }
+    
+    public void setCredits(int newCredits){
+        credits = newCredits;
+    }
+    
+    public String toString(){
+        return "Name: " + getName() +
+                "\nAge: " + getAge() + 
+                "\nAddress: " + getAddress() +
+                "\nGPA: " + getGPA() +
+                "\nCredits: "+ getCredits() +
+                "\nStudent Year: " + getClass().getSimpleName();
     }
     
 }
