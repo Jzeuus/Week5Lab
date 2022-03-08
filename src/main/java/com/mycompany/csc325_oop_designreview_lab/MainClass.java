@@ -9,11 +9,19 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
+ * MainClass --
  *
  * @author MoaathAlrajab, Jesus Alvarado
  */
 public class MainClass {
 	
+        /**
+         * main--
+         * main method used to run this program. Instantiates two student objects.
+         * Requires the user to input data for the gpa for the students then outputs 
+         * those values. Then prints out the state of the students objects on the console.
+         * @param args 
+         */
 	public static void main(String[] args) {
 		// ToDo 5: Fix the error
 		
